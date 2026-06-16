@@ -6,3 +6,16 @@ backend/dist/
 .env
 .env.local
 *.local
+
+# Claude Code config
+CLAUDE.md
+
+# Internal docs — only doc/recettes/ is tracked
+doc/architecture.md
+doc/bonnes-pratiques.md
+doc/qa.md
+doc/testing.md
+doc/todo.md
+doc/guide.md
+doc/list.md
+doc/cours/
