@@ -1,0 +1,12 @@
+node_modules
+dist
+
+# Environment variables
+.env
+
+# SQLite database
+*.db
+*.db-journal
+
+# Prisma generated files (output in src/generated/)
+src/generated/

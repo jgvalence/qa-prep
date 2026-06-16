@@ -9,6 +9,7 @@
     "install:all": "cd frontend && npm install && cd ../backend && npm install"
   },
   "devDependencies": {
+    "@playwright/test": "^1.61.0",
     "concurrently": "^9.1.2"
   }
 }
