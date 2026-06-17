@@ -36,21 +36,19 @@ export default function LoginPage() {
   return (
     <Container maxWidth="sm" sx={{ mt: 8 }}>
       <Paper elevation={3} sx={{ p: 4 }}>
-        <Typography variant="h5" mb={3}>
+        <Typography variant="h5" sx={{ mb: 3 }}>
           Connexion
         </Typography>
 
         <Box
           component="form"
           onSubmit={handleSubmit((data) => mutation.mutate(data))}
-          display="flex"
-          flexDirection="column"
-          gap={2}
+          sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}
         >
           <TextField
             label="Email"
             type="email"
-            inputProps={{ 'data-testid': 'email' }}
+            slotProps={{ htmlInput: { 'data-testid': 'email' } }}
             {...register('email')}
             error={!!errors.email}
             helperText={errors.email?.message}
@@ -59,7 +57,7 @@ export default function LoginPage() {
           <TextField
             label="Mot de passe"
             type="password"
-            inputProps={{ 'data-testid': 'password' }}
+            slotProps={{ htmlInput: { 'data-testid': 'password' } }}
             {...register('password')}
             error={!!errors.password}
             helperText={errors.password?.message}
