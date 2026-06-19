@@ -36,8 +36,11 @@ export default function LoginPage() {
   return (
     <Container maxWidth="sm" sx={{ mt: 8 }}>
       <Paper elevation={3} sx={{ p: 4 }}>
-        <Typography variant="h5" sx={{ mb: 3 }}>
+        <Typography variant="h5" sx={{ mb: 1 }}>
           Connexion
+        </Typography>
+        <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
+          Compte test&nbsp;: <strong>user@test.com</strong> / <strong>password123</strong>
         </Typography>
 
         <Box
