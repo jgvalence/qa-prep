@@ -17,7 +17,7 @@
 
     /* Path aliases — mirrors vite.config.ts resolve.alias */
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["./src/*"]
     },
 
     /* Linting */
@@ -26,5 +26,11 @@
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": [
+    "src/setupTests.ts",
+    "src/__mocks__",
+    "src/**/*.test.ts",
+    "src/**/*.test.tsx"
+  ]
 }

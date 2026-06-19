@@ -8,5 +8,6 @@
     "noEmit": false,
     "esModuleInterop": true,
     "types": ["node", "jest", "@testing-library/jest-dom"]
-  }
+  },
+  "exclude": []
 }
